@@ -1,0 +1,5 @@
+#!/bin/sh
+
+solc mutex_fallback.sol --combined-json ast --pretty-json > mutex_fallback.json
+
+verisol mutex_fallback.json /entryContract:mutex_fallback_test /solc:0.8.0 /target:Ultimate /ltlSpecFile:mutex.spec /stubModel:multipleCallbacks /function:withdraw

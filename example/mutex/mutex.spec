@@ -1,0 +1,1 @@
+// #LTLProperty: [] (willSucceed(mutex_fallback_test.withdraw(amount), true) ==> <> (finished(mutex_fallback_test.withdraw(amount), balances[msg.sender] == old(balances[msg.sender]) - amount || balances[msg.sender] == old(balances[msg.sender]))))

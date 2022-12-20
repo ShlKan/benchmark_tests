@@ -1,0 +1,5 @@
+#!/bin/sh
+
+solc simpleDAO.sol --combined-json ast --pretty-json > simpleDAO.json
+
+verisol simpleDAO.json /entryContract:SimpleDAO /solc:0.8.0 /target:Ultimate /ltlSpecFile:simpleDAO.spec /stubModel:callback /function:withdraw /instrumentGas

@@ -1,0 +1,120 @@
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.core=
+/instance/de.uni_freiburg.informatik.ultimate.core/Create\ a\ Logfile=false
+/instance/de.uni_freiburg.informatik.ultimate.core/Drop\ models\ when\ Ultimate\ exits=true
+/instance/de.uni_freiburg.informatik.ultimate.core/Generate\ benchmark\ results=true
+/instance/de.uni_freiburg.informatik.ultimate.core/Log\ level\ for\ class=
+/instance/de.uni_freiburg.informatik.ultimate.core/Log\ level\ for\ controller\ plugin=INFO
+/instance/de.uni_freiburg.informatik.ultimate.core/Log\ level\ for\ core\ plugin=INFO
+/instance/de.uni_freiburg.informatik.ultimate.core/Log\ level\ for\ external\ tools=ERROR
+/instance/de.uni_freiburg.informatik.ultimate.core/Log\ level\ for\ plugins=INFO
+/instance/de.uni_freiburg.informatik.ultimate.core/Logger\ pattern=[%d{ISO8601} %-5p L%-5.5L %20.20C{1}]\: %m%n
+/instance/de.uni_freiburg.informatik.ultimate.core/Print\ statistic\ results=true
+/instance/de.uni_freiburg.informatik.ultimate.core/Root\ log\ level=WARN
+/instance/de.uni_freiburg.informatik.ultimate.core/Show\ long\ description\ of\ results=true
+/instance/de.uni_freiburg.informatik.ultimate.core/Toolchain\ timeout\ in\ seconds=0
+@de.uni_freiburg.informatik.ultimate.core=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/28/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner=
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Fallback\ to\ processing\ everything=false
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Ignore\ calls\ to\ and\ inside\ polymorphic\ procedures=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Ignore\ calls\ to\ procedures\ with\ 'free\ requires'\ specifications=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Ignore\ calls\ to\ recursive\ procedures=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Ignore\ calls\ with\ 'forall'\ modifier=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Inline\ calls\ to\ unimplemented\ procedures=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/Process\ only\ entry\ and\ re-entry\ procedures=true
+/instance/de.uni_freiburg.informatik.ultimate.boogie.procedureinliner/User\ list=ULTIMATE.ltl_entry_procedure
+@de.uni_freiburg.informatik.ultimate.boogie.procedureinliner=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.boogie.preprocessor=
+/instance/de.uni_freiburg.informatik.ultimate.boogie.preprocessor/Simplify\ expressions=true
+@de.uni_freiburg.informatik.ultimate.boogie.preprocessor=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction=
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Dump\ SMT\ script\ to\ file=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Dump\ automata\ to\ files=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Dump\ only\ reuse-automata=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Stop\ after\ first\ violation\ was\ found=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Trace\ refinement\ strategy=PENGUIN
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Trace\ refinement\ exception\ blacklist=DEPENDING
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction/Command\ for\ external\ solver=z3 SMTLIB2_COMPLIANT\=true -memory\:10240 -smt2 -in -t\:120000
+@de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction=0.2.2
+file_export_version=3.0
+
+
+
+
+# Fri Apr 29 16:11:45 CEST 2022
+\!/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer=
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Try\ to\ simplify\ termination\ arguments=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Try\ twofold\ refinement=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Use\ old\ map\ elimination=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Add\ inequalities\ as\ additional\ conjuncts\ to\ the\ transformula=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Use\ only\ trivial\ implications\ for\ index\ assignments=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Use\ only\ trivial\ implications\ for\ array\ writes=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Add\ implications\ only\ for\ indices\ occuring\ in\ the\ current\ formula=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/NCSB\ implementation=INTSET_LAZY3
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Command\ for\ external\ solver=z3 SMTLIB2_COMPLIANT\=true -memory\:10240 -smt2 -in -t\:120000
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Command\ for\ external\ solver\ (GNTA\ synthesis)=z3 SMTLIB2_COMPLIANT\=true -memory\:10240 -smt2 -in -t\:120000
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer/Command\ for\ external\ solver\ (rank\ synthesis)=z3 SMTLIB2_COMPLIANT\=true -memory\:10240 -smt2 -in -t\:120000
+@de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder=
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Convert\ code\ blocks\ to\ CNF=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Dump\ SMT\ script\ to\ file=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Remove\ assume\ true\ statements=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Remove\ goto\ edges\ from\ RCFG=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Size\ of\ a\ code\ block=SequenceOfStatements
+/instance/de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder/Command\ for\ external\ solver=z3 SMTLIB2_COMPLIANT\=true -memory\:10240 -smt2 -in -t\:120000
+@de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding=
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Apply\ optimizations\ until\ nothing\ changes=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Create\ interprocedural\ compositions=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Create\ parallel\ compositions\ if\ possible=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Maximize\ final\ states=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Minimize\ states\ even\ if\ more\ edges\ are\ added\ than\ removed.=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Minimize\ states\ using\ LBE\ with\ the\ strategy=MULTI
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Remove\ infeasible\ edges=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Remove\ sink\ states=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Rewrite\ not-equals=false
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Simplify\ transitions=true
+/instance/de.uni_freiburg.informatik.ultimate.plugins.blockencoding/Use\ SBE=true
+@de.uni_freiburg.informatik.ultimate.plugins.blockencoding=0.2.2
+file_export_version=3.0
+
+
+
+
+# Adapted on 09/23/2022 by Martin N.
+\!/instance/de.uni_freiburg.informatik.ultimate.ltl2aut=
+/instance/de.uni_freiburg.informatik.ultimate.ltl2aut/Read\ property\ from\ file=true
+/instance/de.uni_freiburg.informatik.ultimate.ltl2aut/Rewrite\ not\ equals\ during\ small\ block\ encoding=false
+/instance/de.uni_freiburg.informatik.ultimate.ltl2aut/Use\ small\ block\ encoding=false
+@de.uni_freiburg.informatik.ultimate.ltl2aut=0.2.2
+file_export_version=3.0

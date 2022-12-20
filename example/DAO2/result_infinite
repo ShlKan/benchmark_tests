@@ -1,0 +1,36 @@
+[2022-12-13 16:05:04,982 INFO  L172             ResultUtil]:  --- Results ---
+[2022-12-13 16:05:04,982 INFO  L174             ResultUtil]:  * Results from de.uni_freiburg.informatik.ultimate.core:
+[2022-12-13 16:05:04,982 INFO  L198             ResultUtil]:   - AssertionsEnabledResult: Assertions are enabled
+[2022-12-13 16:05:04,982 INFO  L202             ResultUtil]:     Assertions are enabled
+[2022-12-13 16:05:04,982 INFO  L198             ResultUtil]:   - StatisticsResult: Toolchain Benchmarks
+[2022-12-13 16:05:04,982 INFO  L202             ResultUtil]:     Benchmark results are:
+ * Boogie PL CUP Parser took 0.07ms. Allocated memory is still 358.6MB. Free memory was 237.2MB in the beginning and 237.1MB in the end (delta: 24.5kB). There was no memory consumed. Max. memory is 4.3GB.
+ * Boogie Procedure Inliner took 4.13ms. Allocated memory is still 358.6MB. Free memory was 234.4MB in the beginning and 233.1MB in the end (delta: 1.3MB). Peak memory consumption was 1.0MB. Max. memory is 4.3GB.
+ * Boogie Preprocessor took 6.99ms. Allocated memory is still 358.6MB. Free memory was 233.1MB in the beginning and 231.8MB in the end (delta: 1.3MB). Peak memory consumption was 1.0MB. Max. memory is 4.3GB.
+ * RCFGBuilder took 111.83ms. Allocated memory is still 358.6MB. Free memory was 231.7MB in the beginning and 219.4MB in the end (delta: 12.2MB). Peak memory consumption was 12.6MB. Max. memory is 4.3GB.
+ * LTL2Aut took 7.63ms. Allocated memory is still 358.6MB. Free memory was 219.4MB in the beginning and 217.6MB in the end (delta: 1.8MB). Peak memory consumption was 2.1MB. Max. memory is 4.3GB.
+ * Büchi Program Product took 184.80ms. Allocated memory is still 358.6MB. Free memory was 217.5MB in the beginning and 151.4MB in the end (delta: 66.1MB). Peak memory consumption was 65.0MB. Max. memory is 4.3GB.
+ * BuchiAutomizer took 495938.18ms. Allocated memory was 358.6MB in the beginning and 404.8MB in the end (delta: 46.1MB). Free memory was 151.2MB in the beginning and 302.8MB in the end (delta: -151.6MB). There was no memory consumed. Max. memory is 4.3GB.
+[2022-12-13 16:05:04,982 INFO  L174             ResultUtil]:  * Results from de.uni_freiburg.informatik.ultimate.buchiprogramproduct:
+[2022-12-13 16:05:04,982 INFO  L198             ResultUtil]:   - StatisticsResult: Initial property automaton
+[2022-12-13 16:05:04,982 INFO  L202             ResultUtil]:     3 locations, 6 edges
+[2022-12-13 16:05:04,982 INFO  L198             ResultUtil]:   - StatisticsResult: Initial RCFG
+[2022-12-13 16:05:04,982 INFO  L202             ResultUtil]:     63 locations, 87 edges
+[2022-12-13 16:05:04,982 INFO  L198             ResultUtil]:   - StatisticsResult: BuchiProgram size
+[2022-12-13 16:05:04,983 INFO  L202             ResultUtil]:     226 locations, 351 edges
+[2022-12-13 16:05:04,983 INFO  L174             ResultUtil]:  * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction:
+[2022-12-13 16:05:04,983 INFO  L198             ResultUtil]:   - StatisticsResult: Constructed decomposition of program
+[2022-12-13 16:05:04,983 INFO  L202             ResultUtil]:     Your program was decomposed into 19 terminating modules (19 trivial, 0 deterministic, 0 nondeterministic). 19 modules have a trivial ranking function, the largest among these consists of 28 locations.
+[2022-12-13 16:05:04,983 INFO  L198             ResultUtil]:   - StatisticsResult: Timing statistics
+[2022-12-13 16:05:04,983 INFO  L202             ResultUtil]:     BüchiAutomizer plugin needed 495.9s and 20 iterations.  TraceHistogramMax:2. Analysis of lassos took 336.8s. Construction of modules took 8.0s. Büchi inclusion checks took 150.9s. Highest rank in rank-based complementation 0. Minimization of det autom 19. Minimization of nondet autom 0. Automata minimization 0.2s AutomataMinimizationTime, 18 MinimizatonAttempts, 274 StatesRemovedByMinimization, 13 NontrivialMinimizations. Non-live state removal took 0.0s Buchi closure took 0.0s. Biggest automaton had -1 states and ocurred in iteration -1.	Nontrivial modules had stage [0, 0, 0, 0, 0].	InterpolantCoveringCapabilityFinite: 0/0	InterpolantCoveringCapabilityBuchi: 0/0	HoareTripleCheckerStatistics: 0 mSolverCounterUnknown, 2746 SdHoareTripleChecker+Valid, 8.1s IncrementalHoareTripleChecker+Time, 0 mSdLazyCounter, 2734 mSDsluCounter, 12183 SdHoareTripleChecker+Invalid, 8.1s Time, 0 mProtectedAction, 0 SdHoareTripleChecker+Unchecked, 231 IncrementalHoareTripleChecker+Unchecked, 9317 mSDsCounter, 976 IncrementalHoareTripleChecker+Valid, 0 mProtectedPredicate, 4376 IncrementalHoareTripleChecker+Invalid, 5583 SdHoareTripleChecker+Unknown, 0 mSolverCounterNotChecked, 976 mSolverCounterUnsat, 2866 mSDtfsCounter, 4376 mSolverCounterSat, 0.1s SdHoareTripleChecker+Time, 0 IncrementalHoareTripleChecker+Unknown	LassoAnalysisResults: nont0 unkn0 SFLI0 SFLT0 conc0 concLT0 SILN0 SILU19 SILI0 SILT0 lasso0 LassoPreprocessingBenchmarks: LassoTerminationAnalysisBenchmarks: not availableLassoTerminationAnalysisBenchmarks: LassoNonterminationAnalysisSatFixpoint: 0	LassoNonterminationAnalysisSatUnbounded: 0	LassoNonterminationAnalysisUnsat: 0	LassoNonterminationAnalysisUnknown: 0	LassoNonterminationAnalysisTime: 0.0s	InitialAbstractionConstructionTime: 0.0s
+[2022-12-13 16:05:04,983 INFO  L198             ResultUtil]:   - AllSpecificationsHoldResult: All specifications hold
+[2022-12-13 16:05:04,983 INFO  L202             ResultUtil]:     Buchi Automizer proved that the LTL property [](((__ltl_ap_started_withdraw0) ==> [](((__ltl_ap_finished_withdraw1) ==> (__ltl_ap_finished_withdraw2))))) holds
+[2022-12-13 16:05:04,988 INFO  L552       MonitoredProcess]: [MP cvc4 --incremental --print-success --lang smt (1862)] Ended with exit code 0
+[2022-12-13 16:05:05,193 INFO  L552       MonitoredProcess]: [MP z3 -smt2 -in SMTLIB2_COMPLIANT=true (1861)] Ended with exit code 0
+[2022-12-13 16:05:05,392 INFO  L552       MonitoredProcess]: [MP cvc4 --incremental --print-success --lang smt (1860)] Ended with exit code 0
+[2022-12-13 16:05:05,596 INFO  L552       MonitoredProcess]: [MP z3 -smt2 -in SMTLIB2_COMPLIANT=true (1859)] Ended with exit code 0
+[2022-12-13 16:05:05,793 INFO  L552       MonitoredProcess]: [MP cvc4 --incremental --print-success --lang smt (1858)] Ended with exit code 0
+[2022-12-13 16:05:05,999 INFO  L552       MonitoredProcess]: [MP z3 -smt2 -in SMTLIB2_COMPLIANT=true (1857)] Ended with exit code 0
+[2022-12-13 16:05:06,197 INFO  L552       MonitoredProcess]: [MP cvc4 --incremental --print-success --lang smt (1856)] Ended with exit code 0
+[2022-12-13 16:05:06,404 INFO  L552       MonitoredProcess]: [MP z3 -smt2 -in SMTLIB2_COMPLIANT=true (1855)] Ended with exit code 0
+[2022-12-13 16:05:06,711 INFO  L552       MonitoredProcess]: [MP z3 SMTLIB2_COMPLIANT=true -memory:10240 -smt2 -in -t:120000 (1853)] Ended with exit code 0

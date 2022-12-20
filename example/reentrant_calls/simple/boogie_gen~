@@ -1,0 +1,5 @@
+#!/bin/sh
+
+solc simple_send.sol --combined-json ast --pretty-json > simple_send.json
+
+verisol simple_send.json /entryContract:Reentrancy /solc:0.8.0 /target:Ultimate /ltlSpecFile:simple.spec /stubModel:callback

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+solc simple.sol --combined-json ast --pretty-json > simple.json
+
+verisol simple.json /entryContract:TestArray /solc:0.8.0 /target:Ultimate /ltlSpecFile:simple.spec
